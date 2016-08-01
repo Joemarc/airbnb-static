@@ -61,54 +61,27 @@ title: Le Wagon Middleman boilerplate
 
     <!-- Your cards code -->
      <div class="container">
-        <div class="text-center">
-          <h2>Results of your research</h2>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-            <div class="card-category">
-              <h2>35 €</h2>
-            </div>
-            <div class="card-description">
-              <h2>Brussels center</h2>
-              <p>Discover Brussel and his downtown</p>
-            </div>
-            <img class="card-user avatar avatar-large" src="images/seb.jpg">
-            <a class="card-link" href="#" ></a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-          <div class="card-category">
-            <h2>90 €</h2>
-          </div>
-          <div class="card-description">
-            <h2>London city</h2>
-            <p>Discover London from inside</p>
-          </div>
-          <img class="card-user avatar"  avatar-large src="images/anne.jpg">
-          <a class="card-link" href="#" ></a>
-         </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-            <div class="card-category">
-              <h2>80 €</h2>
-            </div>
-            <div class="card-description">
-              <h2>Paris</h2>
-              <p>5min of everything in Paris</p>
-            </div>
-            <img class="card-user avatar avatar-large" src="images/romain.jpeg">
-            <a class="card-link" href="#" ></a>
-          </div>
-        </div>
+      <div class="text-center">
+        <h2>Results of your research</h2>
       </div>
-    </div>
+       <div class="row">
+        <% data.flats.each do |owner, flat| %>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+              <div class="card-category"><%= flat.city %></div>
+              <div class="card-description">
+              <h2><%= flat.name %></h2>
+              <p><%= flat.summary %></p>
+            </div>
+            <%= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
+            <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+     </div>
 
 
-    <!-- Your newsletter code -->
     <div id="Newsletter" class="text-center padded">
       <h2>Get news from us</h2>
       <p>Leave us your mail and get news from us</p>
