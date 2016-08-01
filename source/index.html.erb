@@ -2,9 +2,145 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
+<!-- <div class="welcome text-center padded">
   <h1>Welcome to Middleman</h1>
   <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+     link_to "Read Online Documentation", "http://middlemanapp.com/"
   </p>
-</div>
+</div> -->
+
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/giphy1.gif');">
+      <div class="banner-content">
+        <h1>Vivez là-bas</h1>
+          <p>
+            <strong>Réservez des logements auprès d'hôtes locaux dans plus de 191 pays et vivez là-bas, comme chez vous.</strong>
+          </p>
+          <div id="Navbar" class="text-center">
+            <form action="" class="form-inline">
+              <input type="Paris ?" class='form-control' placeholder="Paris ?">
+              <input type="Arrivée" class= 'form-control' placeholder="Check-in">
+              <input type="Départ" class= 'form-control' placeholder="Check-out">
+              <select class="form-control">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">More?</option>
+              </select>
+              <input type="submit" value='Submit' class="btn btn-danger" >
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Your features code -->
+    <div class="wrapper-grey">
+        <div class="container text-center padded features">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="images/globe.png" alt="globe">
+              <h2>Discover the world</h2>
+              <p>The earth is your new home.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="images/dollar.png" alt="dollar">
+              <h2>Pay online</h2>
+              <p>No cash issues anymore.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="images/beer.png" alt="beer">
+              <h2>Meet people</h2>
+              <p>Discover new culture and lifestyle.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <img src="images/heart.png" alt="heart">
+              <h2>Share and love</h2>
+              <p>Join a community you will love.</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Your cards code -->
+     <div class="container">
+        <div class="text-center">
+          <h2>Results of your research</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+            <div class="card-category">
+              <h2>35 €</h2>
+            </div>
+            <div class="card-description">
+              <h2>Brussels center</h2>
+              <p>Discover Brussel and his downtown</p>
+            </div>
+            <img class="card-user avatar avatar-large" src="images/seb.jpg">
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+          <div class="card-category">
+            <h2>90 €</h2>
+          </div>
+          <div class="card-description">
+            <h2>London city</h2>
+            <p>Discover London from inside</p>
+          </div>
+          <img class="card-user avatar"  avatar-large src="images/anne.jpg">
+          <a class="card-link" href="#" ></a>
+         </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+            <div class="card-category">
+              <h2>80 €</h2>
+            </div>
+            <div class="card-description">
+              <h2>Paris</h2>
+              <p>5min of everything in Paris</p>
+            </div>
+            <img class="card-user avatar avatar-large" src="images/romain.jpeg">
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Your newsletter code -->
+    <div id="Newsletter" class="text-center padded">
+      <h2>Get news from us</h2>
+      <p>Leave us your mail and get news from us</p>
+      <form action="" class="form-inline">
+        <input type="email" class='form-control' placeholder="alan@turing.com">
+        <!-- <input type="password" class= 'form-control' placeholder="******"> -->
+        <input type="submit" value='Submit' class="btn btn-danger" >
+      </form>
+    </div>
+  </div>
+
+
+    <!-- Your map code -->
+    <div id="map">
+      <div class="gm-style">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDpFmomDobp_5MsNxTbJWcgT2Jd50Dugyk "></script>
+        <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+        var myOptions = {
+          zoom: 16,
+          center: myLatlng,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+        };
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: "You are here!"
+        });
+        </script>
+      </div>
+    </div>
+
