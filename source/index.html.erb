@@ -76,11 +76,12 @@ title: Le Wagon Middleman boilerplate
         <div class="container">
           <div class="text-center">
             <h2 class="text-white" >Nos produits</h2>
+            <div class="border_line col-md-4 col-md-offset-4"></div>
           </div>
-           <div class="row pad-bot">
+           <div class="row pad-bot pad-top">
             <% data.flats.each do |owner, flat| %>
               <div class="col-xs-12 col-sm-6">
-                <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+                <div class="card shadowed" style="background-image: url('<%= image_path flat.picture %>');">
                   <div class="card-category"><%= flat.city %></div>
                   <div class="card-description">
                   <h2><%= flat.name %></h2>

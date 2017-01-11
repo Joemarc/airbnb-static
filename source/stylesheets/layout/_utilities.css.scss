@@ -25,7 +25,7 @@
 }
 
 .wrapper-grey {
-  background: #F4F4F4;
+  background: white;
 }
 
 .features img {
@@ -50,6 +50,10 @@
   padding-bottom: 72px;
 }
 
+.pad-top {
+  padding-top: 30px;
+}
+
 .text-white {
   color: white;
 }
@@ -57,4 +61,16 @@
 .fa {
   width: 40px;
   color: white;
+}
+
+.shadowed {
+  box-shadow: -2px 5px 2px #C2C2C2;
+}
+
+.border_line {
+  border-bottom: 2px solid white;
+}
+
+.text_color_blue {
+  color: #3B5998;
 }

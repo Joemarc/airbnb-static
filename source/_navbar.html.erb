@@ -1,38 +1,35 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "Dron_ci.png" %>
+    <%= image_tag "logo_drone_clinic.png" %>
   <% end %>
 
     <!-- Text link -->
     <div class="row">
-      <div class="col-md-12 col-md-offset-3">
-        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link   hidden-sm hidden-xs">À propos</a>
-        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link   hidden-sm hidden-xs">Entretien</a>
-        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link   hidden-sm hidden-xs">Réparation</a>
-        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link   hidden-sm hidden-xs">Blog</a>
-        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link   hidden-sm hidden-xs">Contact</a>
-        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link   hidden-sm hidden-xs">Témoignages</a>
+      <div class="col-md-12 col-md-offset-1">
+        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link text_color_blue  hidden-sm hidden-xs">À propos</a>
+        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link text_color_blue  hidden-sm hidden-xs">Entretien</a>
+        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link text_color_blue  hidden-sm hidden-xs">Réparation</a>
+        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link  text_color_blue hidden-sm hidden-xs">Blog</a>
+        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link  text_color_blue hidden-sm hidden-xs">Contact</a>
+        <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link  text_color_blue hidden-sm hidden-xs">Témoignages</a>
       </div>
     </div>
 
     <!-- Notification link-->
-      <div class="navbar-wagon-item hidden-xs hidden-sm">
-      <div class="dropdown">
-        <%= image_tag "shoppin.png", class: "img-circle avatar dropdown-toggle", id:"navbar-wagon-menu",
-        "data-toggle"=>"dropdown" %>
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Mon Panier</a></li>
-          <li><a href="#">Mes Réparations</a></li>
-          <li><a href="#">Mes commandes</a></li>
 
-        </ul>
-      </div>
-    </div>
+
 
     <!-- Profile picture and dropdown -->
     <div class="navbar-wagon-item hidden-sm hidden-xs">
       <div class="dropdown">
+        <%= image_tag "shoppin.png", class: "img-circle avatar dropdown-toggle", id:"navbar-wagon-menu",
+        "data-toggle"=>"dropdown" %>
+         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Mon Panier</a></li>
+          <li><a href="#">Mes Réparations</a></li>
+          <li><a href="#">Mes commandes</a></li>
+        </ul>
         <%= image_tag "user.png", class: "img-circle avatar dropdown-toggle", id:"navbar-wagon-menu hidden-sm hidden-xs",
         "data-toggle"=>"dropdown" %>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
