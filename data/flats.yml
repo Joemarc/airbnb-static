@@ -1,62 +1,16 @@
 seb:
-  owner_name: Sebastien Saunier
-  picture: card-brussels.jpeg
-  description: Hello, nice flat in center of Brussels, good location close to everything
-  owner_picture: seb.jpg
-  name: Seb's home
-  summary: Nice flat in Brussels
-  city: Brussels, Belgium
-  wifi: Wifi
-  accomodates: 2
-  bathroom: 1
-  bed_type: King-size
-  bedrooms: 1
-  beds: 1
-  property_type: Apartment
-  room_type: Entire home/apt
-  kitchen: Kitchen
-  tv: TV
-  welcome_drink : Welcome drink
+  owner_name: Réparation
+  picture: repair.jpg
+  description: Avec le Parrot AR.Drone 2.0 GPS Edition, l’enregistreur de vol Flight Recorder est directement inclus et vous donne accès à de nouvelles fonctionnalités ! Géolocalisation, amélioration de la stabilité, choix d’un point de destination, enregistrement des vols et des vidéos... Dans la section AR.Drone Academy de votre application mobile, vous pouvez même revoir tous vos vols modélisés en 3D.
+  name: Réparez rapidement
 
 
-romain:
-  owner_name: Romain Paillard
-  picture: card-paris.jpeg
-  description: This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
-  owner_picture: romain.jpg
-  name: Romain's home
-  summary: Charming room in Montmartre
-  city: Paris, France
-  wifi: Wifi
-  accomodates: 3
-  bathroom: 1
-  bed_type: King-size
-  bedrooms: 1
-  beds: 1
-  property_type: Apartment
-  room_type: Entire home/apt
-  kitchen: Kitchen
-  tv: TV
-  welcome_drink : Welcome drink
+Romain:
+  owner_name: Trouvez votre pièce
+  picture: pieces.jpg
+  description:
+  owner_picture: pieces.jpg
+  name: Trouvez vos pièces !
 
 
-anne:
-  owner_name: Anne Anne
-  picture: card-london.jpeg
-  description: Hello, nice flat in center of London, good location close to everything
-  owner_picture: anne.jpg
-  name: Anne's home
-  summary: Nice flat in London
-  city: London, UK
-  wifi: Wifi
-  accomodates: 2
-  bathroom: 1
-  bed_type: Real bed
-  bedrooms: 1
-  beds: 2
-  property_type: Apartment
-  room_type: Entire home/apt
-  kitchen: Kitchen
-  tv: TV
-  welcome_drink : Welcome drink
 

@@ -9,13 +9,13 @@ title: Le Wagon Middleman boilerplate
   </p>
 </div> -->
 
- <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/giphy1.gif');">
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/reparation_background.jpg');">
       <div class="banner-content">
-        <h1>Vivez là-bas</h1>
+        <h1>Votre drone se sent bien !</h1>
           <p>
-            <strong>Réservez des logements auprès d'hôtes locaux dans plus de 191 pays et vivez là-bas, comme chez vous.</strong>
+            <strong>Réparez et Entretenez votre drone à moindre coût ! </strong>
           </p>
-          <div id="Navbar" class="text-center">
+          <!-- <div id="Navbar" class="text-center">
             <form action="" class="form-inline">
               <input type="Paris ?" class='form-control' placeholder="Paris ?">
               <input type="Arrivée" class= 'form-control' placeholder="Check-in">
@@ -28,68 +28,86 @@ title: Le Wagon Middleman boilerplate
               </select>
               <input type="submit" value='Submit' class="btn btn-danger" >
             </form>
-          </div>
+          </div> -->
+        <ul class = "list-inline text-center">
+          <li>
+            <a href="#">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </div>
 
     <!-- Your features code -->
     <div class="wrapper-grey">
         <div class="container text-center padded features">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <img src="images/globe.png" alt="globe">
-              <h2>Discover the world</h2>
-              <p>The earth is your new home.</p>
+          <div class="row marg-top">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img class="width_img_set" src="images/wrench.png" alt="globe">
+              <h3>Des réparations rapides et à moindre coût !</h3>
+
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <img src="images/dollar.png" alt="dollar">
-              <h2>Pay online</h2>
-              <p>No cash issues anymore.</p>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img class=" width_img_set" src="images/settings.png" alt="settings">
+              <h3>Plus de 9000 + pièces !</h3>
+
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <img src="images/beer.png" alt="beer">
-              <h2>Meet people</h2>
-              <p>Discover new culture and lifestyle.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-4">
               <img src="images/heart.png" alt="heart">
-              <h2>Share and love</h2>
-              <p>Join a community you will love.</p>
+              <h3>Parrainez et soyez récompensez !</h3>
           </div>
         </div>
       </div>
 
     <!-- Your cards code -->
-     <div class="container">
-      <div class="text-center">
-        <h2>Results of your research</h2>
-      </div>
-       <div class="row">
-        <% data.flats.each do |owner, flat| %>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
-              <div class="card-category"><%= flat.city %></div>
-              <div class="card-description">
-              <h2><%= flat.name %></h2>
-              <p><%= flat.summary %></p>
-            </div>
-            <%= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
-            <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
-            </div>
+      <div class="wrapper-black">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="text-white" >Nos produits</h2>
           </div>
-        <% end %>
+           <div class="row pad-bot">
+            <% data.flats.each do |owner, flat| %>
+              <div class="col-xs-12 col-sm-6">
+                <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+                  <div class="card-category"><%= flat.city %></div>
+                  <div class="card-description">
+                  <h2><%= flat.name %></h2>
+                  <p><%= flat.summary %></p>
+                </div>
+
+                <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
       </div>
-     </div>
+
+
 
 
     <div id="Newsletter" class="text-center padded">
-      <h2>Get news from us</h2>
-      <p>Leave us your mail and get news from us</p>
+      <h2>Newsletter</h2>
+      <p>Entrez-votre Email et bénéficiez de 20 euros de remise sur votre première transaction !</p>
       <form action="" class="form-inline">
         <input type="email" class='form-control' placeholder="alan@turing.com">
         <!-- <input type="password" class= 'form-control' placeholder="******"> -->
-        <input type="submit" value='Submit' class="btn btn-danger" >
+        <input type="submit" value='Envoyer' class="btn btn-danger" >
       </form>
     </div>
   </div>
+
+
 
