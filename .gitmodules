@@ -1,0 +1,3 @@
+[submodule "Drone-clinic"]
+	path = Drone-clinic
+	url = https://github.com/Joemarc/Drone-clinic
